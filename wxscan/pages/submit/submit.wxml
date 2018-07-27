@@ -1,0 +1,2 @@
+<!--pages/submit/submit.wxml-->
+<view class='submit_success'>提交成功</view>

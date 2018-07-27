@@ -1,0 +1,11 @@
+<view class="container"  style="background-image: url('../../images/0.jpg');">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  
+    <input placeholder="用户名" placeholder-style='color:#fff'  maxlength="20" type="text" bindinput="userNameInput"/>
+   
+    <input placeholder='登录密码' placeholder-style='color:#fff' maxlength="20"  type="text" bindinput="userPasswordInput" password="true"/>
+
+    <button bindtap="logIn" hover-class='btn_hover'>登录</button>
+  </view>
+</view>

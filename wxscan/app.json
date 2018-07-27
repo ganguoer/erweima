@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/erweima/erweima",
+    "pages/submit/submit",
+    "pages/index/index",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,29 @@
+<!--pages/mine/mine.wxml-->
+<view class='top'>
+<block>  
+<view class="head-logo"><open-data type="userAvatarUrl" ></open-data></view>
+<view><open-data type="userNickName" ></open-data></view>
+ </block>
+</view>
+
+<view class='row'></view>
+
+<view class='manage'>
+  <navigator url='/pages/erweima/erweima'>     
+      <button type='' hover-class='btn_hover'>扫描二维码</button>
+  </navigator>
+  <navigator url='/pages/erweima/erweima'>      
+     <button hover-class='btn_hover'>按钮2</button> 
+  </navigator>
+  <navigator url='/pages/erweima/erweima'>
+     <button hover-class='btn_hover'>按钮3</button>
+  </navigator>
+  <navigator url='/pages/erweima/erweima'>
+     <button hover-class='btn_hover'>按钮4</button>
+  </navigator>
+<navigator url='/pages/erweima/erweima'>
+     <button hover-class='btn_hover'>按钮5</button>
+  </navigator>
+
+</view>
+

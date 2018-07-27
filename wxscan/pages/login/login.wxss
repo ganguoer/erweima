@@ -1,0 +1,41 @@
+/* pages/login/login.wxss */
+checkbox .wx-checkbox-input{
+    border-radius:50%;
+    width:20px;height:20px;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+    border-color:red !important;
+    background:rebeccapurple !important;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:15px;
+    color:#fff;
+    background:transparent;
+    transform:translate(-50%, -50%) scale(1);
+    -webkit-transform:translate(-50%, -50%) scale(1);
+}
+radio .wx-radio-input{
+    border-radius:50%;
+    width:20px;height:20px;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+    border-color:coral !important;
+    background:aqua !important;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:15px;
+    color:#fff;
+    background:transparent;
+    transform:translate(-50%, -50%) scale(1);
+    -webkit-transform:translate(-50%, -50%) scale(1);
+}

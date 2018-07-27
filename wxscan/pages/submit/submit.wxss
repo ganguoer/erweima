@@ -1,0 +1,6 @@
+/* pages/submit/submit.wxss */
+.submit_success{
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 50px
+}

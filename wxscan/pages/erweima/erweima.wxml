@@ -1,0 +1,19 @@
+<!--pages/erweima/erweima.wxml-->
+<view class='content'>  
+  
+
+    <view class='erwei'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <input placeholder='请输入内容' ></input>
+        <input placeholder='请输入内容' ></input>
+        <view class='btn'>
+           <button bindtap="click">扫码</button>
+           <navigator url='/pages/submit/submit'> 
+               <button bindtap="btnSubmit">提交</button>
+           </navigator>
+        </view>
+    </form>
+    </view>
+      <view>{{show}}</view>  
+</view> 
+

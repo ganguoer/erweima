@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<text>pages/login/login.wxml</text>
+<view>
+    <form bindsubmit="sumit">
+        <input bindinput="phone"maxlength="11" type="number" class="marginview" name="phone" placeholder="手机号"/>
+        <input bindinput="password" maxlength="8" password class="marginview"name="passworld" placeholder="密码"/>
+        <button style="opacity: {{opacity}};color: white; background-color: #ff8719;" disabled="{{disabled}}" loading="{{loginLoading}}"    class="marginview"form-type="submit">登录</button>
+    </form>
+        <button bindtap="gotoRegist" plain style="color: #ff8719; border-color: #ff8719;"  class="marginview">注册</button>
+        <navigator open-type="redirect" hover-class="none" class="marginview textview" url="forgetpw/forgetpw">忘记密码</navigator>
+</view>
