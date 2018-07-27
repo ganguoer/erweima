@@ -6,13 +6,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
-    // 获取用户信息
+    //获取用户信息
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
@@ -32,6 +26,64 @@ App({
         }
       }
     })
+
+
+    this.onLogin();
+  // 判断 登录
+    
+    try {
+      var value = wx.getStorageSync('token');
+      console.log(value);
+      if (value) {
+        wx.navigateTo({
+          url: '/pages/mine/mine'
+        })
+      }else{
+        console.log('aaaaaa');
+        wx.navigateTo({
+          url: '/pages/logs/logs'
+        }) 
+      }
+    } catch (e) {
+      console.log('没有发现token值 =_= ')
+    }
+   
+  },
+  onLogin: function () {
+    wx.login({
+      success: function (res) {
+        console.log(res);
+        wx.setStorage({
+          key: 'code',
+          data: res.code,
+        });
+
+        // wx.request({
+        //   url: '',
+        //   data: {
+        //     code: res.code,
+
+        //   },
+        //   method: 'GET',
+        //   header: {
+        //     'content-type': 'application/x-www-form-urlencoded'
+        //   },
+        //   success: function (res) {
+
+        //     //存储mid
+        //     wx.setStorageSync('mid', res.data.mid);
+
+        //   }
+        // })
+
+        //存储token
+           
+            
+      }
+    })
+    wx.setStorageSync('token', 'successs');
+    console.log(11111111111)
+
   },
   globalData: {
     userInfo: null
